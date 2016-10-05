@@ -1,20 +1,24 @@
-<!DOCTYPE HTML>
-<html>
-  <head >
-    <title>{{utitle}}</title>
-  </head>
+<!DOCTYPE html>
 
-  <body>
-    {% if flag == 1 %}
-        Red-6 is a hero of the Alliance
-    {% endif %}
-    {% if flag == 0 %}
-        RIP Porkins
-        <br>
-	<form action="/" method="GET">
-	  <input type="submit" value="Go back and ruminate your failures">
-	</form>
-    {% endif %}
-  </body>
-    
+<html>
+
+	<head>
+		<title> {{ utitle }} </title>
+	<head>
+
+	<body>
+		 	{% if flag == 1 %}
+  				Red-6 is a hero of the Alliance
+			{% endif %}
+			{% if flag == 0 %}
+				RIP Porkins
+				<br>
+				<form action="/" method="GET">
+				  <input type="submit" value="One more run">
+				</form>
+			{% endif %}
+
+
+	</body>
+
 </html>
