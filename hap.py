@@ -10,7 +10,7 @@ def login():
     print request.headers          #only works for POST
     return render_template( 'login.html' )
 
-@app.route("/registration/", methods["POST","GET"])
+@app.route("/registration/", methods=["POST","GET"])
 def register():
     return render_template('register.html', utitle = "Register")
 
