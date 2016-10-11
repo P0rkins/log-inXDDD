@@ -16,7 +16,7 @@ def login():
 
 @app.route("/login/", methods=["POST"])
 def login():
-    return render_template('login.html', utitle = "Register")
+    return render_template('login.html', message = "Register")
 
 @app.route("/regauth/", methods=["POST", "GET"])
 def regauth():
