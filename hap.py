@@ -7,7 +7,7 @@ d={}
 user=""
 
 @app.route("/")
-def login():
+def home():
     convertDict()
     if(user in session):
         return welcome()
