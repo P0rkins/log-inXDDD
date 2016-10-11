@@ -36,7 +36,7 @@ def regauth():
 	return render_template('register.html', message = 'Account Registered!' , title = 'Register')
 
 
-@app.route("/auth", methods=['POST'])
+@app.route("/authenticate/", methods=['POST'])
 def authenticate():
     global user
     convertDict()
