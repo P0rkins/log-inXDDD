@@ -58,7 +58,7 @@ def authenticate():
 def registration():
     if request.method=="POST":
         u=request.form["username"]
-        p=hashbrowns(request.form["pass"])
+        p=hashIt(request.form["pass"])
         if u in d.keys():
             return render_template("login.html",message="Username taken. Be more original")
         else:
