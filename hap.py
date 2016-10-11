@@ -14,7 +14,7 @@ def login():
     else:
         return login()
 
-@app.route("/login/", methods=["POST")
+@app.route("/login/", methods=["POST"])
 def login():
     return render_template('login.html', utitle = "Register")
 
