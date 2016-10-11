@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 
 <html>
+     
+  <head>
+    <title> Ze Log-in </title>
+  </head>
 
-	<head>
-		<title> {{ utitle }} </title>
-	<head>
+  <body>
+    <center>
+      <h1> {{ message }} </h1>
+      <br><br>
+      {{mas}}
+    </center>
+    
+    <form action="/auth/" method="POST">
+      <br><br>
+      What's your name,sir/madam?
+      <input type="text" name="username">
+      <br><br>
+      What's your secret code, sir/madam?:
+      <input type="password" name="pass">
+      <br><br>
+      <input type="submit" name="log" value="Log in">
+      <br><br>
+    </form>
 
-	<body>
-		<form action="/authenticate/" method="POST">
-		  Enter your username and password:
-		  <br>
-		  <input type="text" name="user" value="">
-		  <br>
-		  <input type="password" name="password" value="">
-		  <br>
-		  <input type="submit" value="Login">
-		</form>
-		<form action="/registration/">
-		<input type="submit" value="Register">
-		</form>
+    
+      Don't have an account yet? Register now!
+      <br>
+      <form action="/register/" method="POST">
+     <br><br>
+      What's your name,sir/madam?
+      <input type="text" name="username">
+      <br><br>
+      What's your secret code, sir/madam?:
+      <input type="password" name="pass">
+      <br><br>
+      <input type="submit" name="reg" value="Register">
+      <br><br>
+      </form>
 
-
-	</body>
+      <form action="/secretgate/">
+	<input type="submit" name="other" value="check if you're logged in">
+      </form>
+      
+  </body>
 
 </html>

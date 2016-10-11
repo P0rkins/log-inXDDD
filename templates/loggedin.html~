@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> You are winner! </title>
+    <h1> SUCCESS! </h1>
+  </head>
+
+  <body>
+    Welcome, {{message}}
+  </body>
+
+  <form action="/logout/" method="POST">
+    <input type="submit" name="logout" value="Log Out">
+  </form>
+
+  <form action="/other/">
+    <input type="submit" name="other" value="check your login status">
+  </form>
+
+</html>
